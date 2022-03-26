@@ -1,7 +1,6 @@
 import React from 'react'
 
 import MovieCard from './MovieCard';
-import './MovieCard.scss'
 
 export default {
   title: 'Components/MovieCard',

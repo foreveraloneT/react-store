@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types'
 
+import './MovieCard.scss'
+
 function MovieCard({ title, poster }) {
   return (
     <div className="Movie-card">
-      <div class="Movie-card__overlay">
-        <div class="Movie-card__title">{title}</div>
+      <div className="Movie-card__overlay">
+        <div className="Movie-card__title">{title}</div>
       </div>
       {/* <img src={poster} alt={title} /> */}
       <div
