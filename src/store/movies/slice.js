@@ -25,6 +25,9 @@ export const movieSlice = createSlice({
       state.fetchingStatus = LOADING_STATUS.FAILURE;
       state.data = [];
     },
+    idleSearch(state) {
+      state.fetchingStatus = LOADING_STATUS.IDLE;
+    },
   },
 });
 
