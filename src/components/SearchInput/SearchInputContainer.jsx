@@ -7,7 +7,7 @@ import SearchInput from './SearchInput';
 function SearchInputContainer(props) {
   const keyword = useSelector(moviesStore.selectors.keyword);
   const dispatch = useDispatch()
-  const searchMovie = moviesStore.hooks.useSearchMovie()
+  const searchMovie = moviesStore.utils.useSearchMovie()
 
   useEffect(() => {
     searchMovie();
