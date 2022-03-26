@@ -1,0 +1,6 @@
+export const LOADING_STATUS = {
+  IDLE: 'idle',
+  LOADING: 'LOADING',
+  SUCCESS: 'SUCCESS',
+  FAILURE: 'FAILURE',
+};
