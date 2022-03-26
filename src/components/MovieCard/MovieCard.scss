@@ -1,0 +1,43 @@
+.Movie-card {
+  position: relative;
+  width: 200px;
+  height: 296px;
+  --poster-opacity: 0;
+  --poster-size: 100%;
+
+  &:hover {
+    --poster-opacity: 1;
+    --poster-size: 150%;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 24px;
+    box-sizing: border-box;
+    opacity: var(--poster-opacity);
+    transition: opacity .4s ease-in-out;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    font-size: 24px;
+    user-select: none;
+  }
+
+  &__poster {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: var(--poster-size);
+    background-position: center;
+    transition: background-size .6s ease-in-out;
+  }
+}
